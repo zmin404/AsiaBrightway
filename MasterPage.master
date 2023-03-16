@@ -1,0 +1,199 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Asia Brightway IT Co., Ltd</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <!-- Essential styles -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css"> 
+    <link rel="stylesheet" href="assets/fancybox/jquery.fancybox.css?v=2.1.5" media="screen"> 
+     
+    <!-- Boomerang styles -->
+        <link id="wpStylesheet" type="text/css" href="css/global-style.css" rel="stylesheet" media="screen">
+        
+
+    <!-- Favicon -->
+    <link href="images/ABW.ico" rel="icon">
+
+    <!-- Assets -->
+    <link rel="stylesheet" href="assets/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="assets/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="assets/sky-forms/css/sky-forms.css">    
+    
+    <!-- Required JS -->
+    <script src="js/jquery1.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/map.js"></script>
+
+    <!-- Page scripts -->
+    <%--<link rel="stylesheet" href="assets/layerslider/css/layerslider.css" type="text/css">--%>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="body-wrap">
+            <div id="divHeaderWrapper">
+                <header class="header-standard-2">     
+    <!-- MAIN NAV -->
+                    <div class="navbar navbar-wp navbar-arrow mega-nav" role="navigation">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <i class="fa fa-bars icon-custom"></i>
+                                </button>
+                                <a class="navbar-brand" href="Default.aspx" title="Asia Brightway">
+                                    <img src="images/ABW_2015.png" alt="Asia Brightway | IT solution" style="width:170px;height:70px;">
+                                </a>
+                            </div>
+                            <div class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="dropdown dropdown-meganav mega-dropdown-fluid">
+                                        <a href="Default.aspx" class="dropdown-toggle">Home</a>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu">
+                                                <a tabindex="-1" href="#">Packaged Software</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a tabindex="-1" href="iPos.aspx">intelli POS</a></li>
+                                                    <li><a tabindex="-1" href="rPro.aspx">Restaurant PRO</a></li>
+                                                    <li><a tabindex="-1" href="iHos.aspx">iHOS (Hospital)</a></li>
+                                                    <li><a tabindex="-1" href="iCOS.aspx">iCOS (Construction)</a></li>
+                                                    <li><a tabindex="-1" href="ASCOS.aspx">ASCOS</a></li>
+                                                    <li><a tabindex="-1" href="IHRM.aspx">IHRM</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a tabindex="-1" href="#">Customized Software</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a tabindex="-1" href="ShareRegistry.aspx">Share Registry System</a></li>
+                                                    <li><a tabindex="-1" href="OTC.aspx">OTC</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="Portfolio.aspx" class="dropdown-toggle">Portfolio</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="WebsitePlanA.aspx" class="dropdown-toggle">Website</a>
+                                    </li>
+                                   <%-- <li class="dropdown">
+                                        <a href="Client.aspx" class="dropdown-toggle">Our Clients</a>
+                                    </li>--%>
+                                    <li class="dropdown dropdown-meganav mega-dropdown-fluid">
+                                        <a href="AboutUs.aspx" class="dropdown-toggle">About us</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="ContactUs.aspx" class="dropdown-toggle">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div><!--/.nav-collapse -->
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+            <!-- FOOTER -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="col">
+                                <h4>Head Office</h4>
+                                <ul>
+                                    <li>No (2), 30<sup>th</sup> street, between 58<sup>th</sup> & 59<sup>th</sup>street
+                                        <br />
+                                        Aung Myay Tharsan Township,<br />
+                                        Mandalay, Myanmar.
+                                    </li>
+                                    <li>Phone: +95 9 798890081, +95 9 798890082 <br /></li>
+                                    <li>Hot Line: +95 9 256400425</li>
+                                    <li>Email: <a href="mailto:info@asiabrightway.com" title="Email Us">info@asiabrightway.com</a></li>
+                                    <li>Website: <a href="http://www.asiabrightway.com" title="Asia Brightway IT">www.asiabrightway.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="col col-social-icons">
+                                <h4>Follow us</h4>
+                                <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FAsiaBrightWay&amp;width=250&amp;height=230&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true" 
+                                    scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:250px; height:230px;" allowTransparency="true">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+            <hr>
+                    <div class="row">
+                        <div class="col-lg-12 copyright">
+                            2016 © Asia Brightway. All rights reserved.
+                        </div>
+                       
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </form>
+    <!-- Essentials -->
+<script src="js/modernizr.custom.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+<script src="js/jquery.easing.js"></script>
+<script src="js/jquery.metadata.js"></script>
+<script src="js/jquery.hoverup.js"></script>
+<script src="js/jquery.hoverdir.js"></script>
+<script src="js/jquery.stellar.js"></script>
+
+<!-- Boomerang mobile nav - Optional  -->
+<script src="assets/responsive-mobile-nav/js/jquery.dlmenu.js"></script>
+<script src="assets/responsive-mobile-nav/js/jquery.dlmenu.autofill.js"></script>
+
+<!-- Forms -->
+<script src="assets/ui-kit/js/jquery.powerful-placeholder.min.js"></script> 
+<script src="assets/ui-kit/js/cusel.min.js"></script>
+<script src="assets/sky-forms/js/jquery.form.min.js"></script>
+<script src="assets/sky-forms/js/jquery.validate.min.js"></script>
+<script src="assets/sky-forms/js/jquery.maskedinput.min.js"></script>
+<script src="assets/sky-forms/js/jquery.modal.js"></script>
+
+<!-- Assets -->
+<script src="assets/hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+<script src="assets/page-scroller/jquery.ui.totop.min.js"></script>
+<script src="assets/mixitup/jquery.mixitup.js"></script>
+<script src="assets/mixitup/jquery.mixitup.init.js"></script>
+<script src="assets/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script src="assets/waypoints/waypoints.min.js"></script>
+<script src="assets/milestone-counter/jquery.countTo.js"></script>
+<script src="assets/easy-pie-chart/js/jquery.easypiechart.js"></script>
+<script src="assets/social-buttons/js/rrssb.min.js"></script>
+<script src="assets/nouislider/js/jquery.nouislider.min.js"></script>
+<script src="assets/owl-carousel/owl.carousel.js"></script>
+<script src="assets/bootstrap/js/tooltip.js"></script>
+<script src="assets/bootstrap/js/popover.js"></script>
+
+<!-- Sripts for individual pages, depending on what plug-ins are used -->
+
+
+<!-- Boomerang App JS -->
+<script src="js/wp.app.js"></script>
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+<![endif]-->
+
+<!-- Temp -- You can remove this once you started to work on your project -->
+<script src="js/jquery.cookie.js"></script>
+<script src="js/wp.switcher.js"></script>
+<script type="text/javascript" src="js/wp.ga.js"></script>
+</body>
+</html>
